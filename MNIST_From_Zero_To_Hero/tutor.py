@@ -51,9 +51,11 @@ class Tutor():
     def check_reading_functions(self, pixel_reading_func=None, label_reading_func=None):
 
         if pixel_reading_func:
+            self.__pixel_reading_func = pixel_reading_func
             self.__speak("正在检查图像数据集读取函数..")
+
             magic_number, num_images, num_rows, num_cols, pixels = pixel_reading_func(
-                self.training_image_file)
+                self.test_image_file)
 
             results = []
             if magic_number != 2051:
@@ -87,9 +89,11 @@ class Tutor():
             self.__speak("没有提供图像数据集读取函数，跳过。")
 
         if label_reading_func:
+            self.__label_reading_func = label_reading_func
             self.__speak("正在检查标签数据集读取函数..")
+
             magic_number, num_items, labels = label_reading_func(
-                self.training_label_file)
+                self.test_label_file)
 
             results = []
             if magic_number != 2049:
@@ -122,3 +126,16 @@ class Tutor():
         else:
             self.__speak("看上去不错，给过！")
 
+    def check_dataset_function(self, build_dataset_func):
+
+        _, _, _, _, pixels = self.__pixel_reading_func(self.test_image_file)
+        _, _, labels = self.__label_reading_func(self.test_label_file)
+
+        dataset = build_dataset_func(pixels, labels)
+
+        p, l = iter(dataset).next()
+
+        if p.shape.as_list() != [784] or l.shape.as_list() != []:
+            self.__speak("数据集形状与预期不符呢！请检查。")
+        else:
+            self.__speak("看上去不错，加油！")
