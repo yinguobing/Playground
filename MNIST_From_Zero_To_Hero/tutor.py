@@ -1,4 +1,5 @@
 from hashlib import md5
+import tensorflow as tf
 
 
 class Tutor():
@@ -110,3 +111,14 @@ class Tutor():
                 self.__speak("标签数据集读取方法OK！")
         else:
             self.__speak("没有提供标签数据集读取函数，跳过。")
+
+    def check_model_function(self, build_model_func):
+
+        model = build_model_func(128, 0.2)
+        outputs = model(tf.expand_dims(tf.constant(tf.range(28*28)), axis=0))
+
+        if outputs.shape.as_list() != [1, 10]:
+            self.__speak("看起来模型的输出形状与预期不符，请检查。")
+        else:
+            self.__speak("看上去不错，给过！")
+
