@@ -139,3 +139,16 @@ class Tutor():
             self.__speak("数据集形状与预期不符呢！请检查。")
         else:
             self.__speak("看上去不错，加油！")
+
+    def check_loss_func(self, loss_func):
+
+        y = tf.constant(2)
+        y_ = tf.constant([0.1, 0.2, 0.9, 0.15])
+
+        l = tf.keras.losses.sparse_categorical_crossentropy(y, y_, True)
+        l_ = loss_func(y, y_)
+
+        if l != l_:
+            self.__speak("损失函数看上去有点不正常。你确定吗？")
+        else:
+            self.__speak("看上去达成了目标。请继续！")
