@@ -1,5 +1,6 @@
 from hashlib import md5
 import tensorflow as tf
+import numpy as np
 
 
 class Tutor():
@@ -63,7 +64,7 @@ class Tutor():
             else:
                 results.append(True)
 
-            if num_images != 60000:
+            if num_images != 10000:
                 self.__speak("图像数量异常，请检查。")
             else:
                 results.append(True)
@@ -101,7 +102,7 @@ class Tutor():
             else:
                 results.append(True)
 
-            if num_items != 60000:
+            if num_items != 10000:
                 self.__speak("标签数量异常，请检查。")
             else:
                 results.append(True)
@@ -128,6 +129,8 @@ class Tutor():
 
     def check_dataset_function(self, build_dataset_func):
 
+        self.build_dataset_func = build_dataset_func
+
         _, _, _, _, pixels = self.__pixel_reading_func(self.test_image_file)
         _, _, labels = self.__label_reading_func(self.test_label_file)
 
@@ -151,4 +154,30 @@ class Tutor():
         if l != l_:
             self.__speak("损失函数看上去有点不正常。你确定吗？")
         else:
-            self.__speak("看上去达成了目标。请继续！")
+            self.__speak("损失函数看上去很棒，请继续！")
+
+    def check_optimizer(self, optimizer):
+
+        if not isinstance(optimizer, tf.keras.optimizers.Optimizer):
+            self.__speak("看起来你构建的并非是优化器，请检查。")
+        else:
+            self.__speak("优化器看上去正常。请继续。")
+
+    def check_metrics(self, metrics):
+
+        for metric in metrics:
+            if not isinstance(metric, tf.keras.metrics.Metric):
+                self.__speak("看起来你构建的并非是有效指标，请检查。")
+            else:
+                self.__speak("评价指标选择看上去不错！请继续。")
+
+    def demo(self, model):
+        _, _, _, _, pixels = self.__pixel_reading_func(self.test_image_file)
+        _, _, labels = self.__label_reading_func(self.test_label_file)
+        dataset = self.build_dataset_func(pixels, labels)
+        p, l = iter(dataset).next()
+        prob = model(tf.expand_dims(p, axis=0)).numpy().squeeze()
+        result = np.argmax(prob)
+        self.__speak("预测结果为：{:1d}".format(int(result)))
+
+        return (p.numpy().reshape((28, 28)) * 255).astype(np.uint8)
