@@ -12,6 +12,12 @@ class Tutor():
     def __speak(self, message):
         print(f"\033[34m[{self.name}]\033[0m " + message)
 
+    def check_packages(self):
+        self.__speak("TensorFlow: {}".format(tf.__version__))
+        self.__speak("NumPy: {}".format(np.__version__))
+        import matplotlib
+        self.__speak("Matplotlib: {}".format(matplotlib.__version__))
+
     def check_files(self, training_image_file, training_label_file,
                     test_image_file, test_label_file):
 
