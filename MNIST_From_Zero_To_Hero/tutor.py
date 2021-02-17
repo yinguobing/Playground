@@ -144,7 +144,7 @@ class Tutor():
 
         p, l = iter(dataset).next()
 
-        if p.shape.as_list() != [784] or l.shape.as_list() != []:
+        if p.shape.as_list() != [784] or l.shape.as_list() != [1]:
             self.__speak("数据集形状与预期不符呢！请检查。")
         else:
             self.__speak("看上去不错，加油！")
