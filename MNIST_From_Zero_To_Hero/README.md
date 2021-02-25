@@ -1,5 +1,7 @@
 # MNIST·从零到一
 
+项目配套视频：https://www.bilibili.com/video/BV17f4y167vJ/
+
 MNIST是一个由人类手写数字图像构成的数据集。它的作者为Yann LeCun、Corinna Cortes与Christopher J.C. Burges。该数据集曾被用作分类算法的开发与评估。给定任一张图像，给出该图像对应的数字。深度学习的入门教程普遍以该任务为实例。它足够简单——包含10个类别的图像分类问题；同时又足够复杂——人类手写的数字可以非常潦草、难以辨认。
 
 ![MNIST](docs/digits.png)
