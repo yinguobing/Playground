@@ -18,45 +18,113 @@ MNIST是一个由人类手写数字图像构成的数据集。它的作者为Yan
 
 这篇教程同样以MNIST为实验内容载体。不过与其它教程不同的地方在于，你将真正意义上从零开始，一步一步实现一个功能完备的深度学习项目。
 
-项目配套互动视频：https://www.bilibili.com/video/BV17f4y167vJ/
+互动视频：https://www.bilibili.com/video/BV17f4y167vJ/
 
 项目地址：https://github.com/yinguobing/Playground/tree/main/MNIST_From_Zero_To_Hero
 
 ### 项目二：卷积神经网络
 从超过20万张图像样本中学习人脸特征点的分布规律。克服姿态、光照、遮挡等不利因素。构建经典神经网络架构。最终实现头部姿态的视频实时检测。
 
+视频地址：`敬请期待`
+
+项目地址：https://github.com/yinguobing/cnn-facial-landmark
+
+进阶视频地址：`敬请期待`
+
+进阶项目地址：https://github.com/yinguobing/facial-landmark-detection-hrnet
+
 ### 项目三：物体检测（专题）
 向经典的物体检测方案学习，掌握关键核心概念，理解深度卷积神经网络在检测方案中扮演的角色。
+
+视频地址：`敬请期待`
+
+项目地址：https://github.com/yinguobing/linglong
 
 ### 项目四：人脸识别（专题）
 解开人脸识别原理的神秘面纱，了解技术链条中不同阶段的实现背景，获取98%+准确率的自有人脸识别模型。
 
+视频地址：`敬请期待`
+
+项目地址：https://github.com/yinguobing/arcface
+
 ## 迷你项目
-探索众多迷你项目，点亮技能点。
+探索众多迷你项目，点亮技能点，为今后的实战项目做好准备。
 
 ### 模型拼接
 掌握不同的模型构建方式，在项目中灵活应用。
 
+文章地址：`敬请期待`
+
+视频地址：`敬请期待`
+
+项目地址：`敬请期待`
+
 ### 从OpenImages数据集中提取人脸图像
 项目遇到数据短缺问题，如何从现有的公开数据集中获取资源。
+
+视频地址：`敬请期待`
+
+项目地址：https://github.com/yinguobing/open_images
 
 ### 读写自定义TFRecord文件
 高效存储读取训练用文件。
 
+文章地址：`敬请期待`
+
+视频地址：`敬请期待`
+
+项目地址：`敬请期待`
+
 ### 随机化大型数据集
 使用大型数据集训练模型面临一个不可忽略的问题：如何有效地随机化数据。
+
+文章地址：https://yinguobing.com/shuffle-the-tensorflow-dataset-throughly/
+
+视频地址：https://www.bilibili.com/video/BV1wV411i7qy/
+
+项目地址：`敬请期待`
 
 ### 使用Checkpoint保存训练进度
 灵活使用Checkpoint，保存训练进度与自定义对象。
 
+文章地址：https://yinguobing.com/how-to-checkpoint-tensorflow-dataset/
+
+视频：https://www.bilibili.com/video/BV1yf4y167gr/
+
+项目地址：`敬请期待`
+
 ### 在训练过程中保存模型预测的图像
 如何在训练进行中直观地检查模型表现。
+
+文章地址：https://yinguobing.com/log-images-in-tensorboard/
+
+视频地址：`敬请期待`
+
+项目地址：`敬请期待`
 
 ### 模型剪枝（参数分布稀疏化）
 如何大幅度减小模型体积，却只牺牲少量性能？
 
+文章地址：https://yinguobing.com/tensorflow-model-pruning/
+
+视频地址：`敬请期待`
+
+项目地址：`敬请期待`
+
 ### 模型量化（参数范围离散化）
 将你的模型移植到特殊的硬件设备中运行。
 
+文章地址：https://yinguobing.com/tensorflow-model-quanzitation/
+
+视频地址：`敬请期待`
+
+项目地址：`敬请期待`
+
 ### 为Apple设备转换模型
 为你的同事准备好一款让他们放心的模型。
+
+文章地址：`敬请期待`
+
+视频地址：`敬请期待`
+
+项目地址：`敬请期待`
