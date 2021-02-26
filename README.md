@@ -16,4 +16,6 @@ MNIST是一个由人类手写数字图像构成的数据集。它的作者为Yan
 
 这篇教程同样以MNIST为实验内容载体。不过与其它教程不同的地方在于，你将真正意义上从零开始，一步一步实现一个功能完备的深度学习项目。
 
+项目配套互动视频：https://www.bilibili.com/video/BV17f4y167vJ/
+
 项目地址：https://github.com/yinguobing/Playground/tree/main/MNIST_From_Zero_To_Hero
