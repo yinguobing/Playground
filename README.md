@@ -1,6 +1,9 @@
 # Playground
 深度学习新手小广场（机器视觉主题）
 
+![playground](https://repository-images.githubusercontent.com/337013988/5bf06800-7854-11eb-835a-f9d935a8e5ea)
+
+
 ## 这个代码仓库有何用
 如同学习其它任何新技能一样，掌握深度学习并无捷径可循。布满墨迹的A4纸张，屏幕上不断生长的代码，冒着呼呼热气的GPU，都是你成长道路上所付出努力的证明。
 
