@@ -8,6 +8,27 @@
 
 但是，没有捷径并不意味着只能两眼一闭摸黑乱撞。走过迷宫的先驱者们或多或少都会留下探索的痕迹。跟随他们的脚印，踏实地走好每一步，是新手高效学习之光。
 
+## 基础知识
+什么是分辨率？什么是色彩？如何数字化一张图像？如果你对这些概念的含义还拿不准的话，请先观看计算机视觉入门视频。兵马未动，粮草先行。
+
+人眼的分辨率有多高：https://yinguobing.com/resolution-of-human-eye/
+
+什么是视网膜屏幕：https://yinguobing.com/what-is-retina-display/
+
+什么是色彩：https://yinguobing.com/what-is-color/
+
+什么是HDR：https://yinguobing.com/what-is-hdr/
+
+如何数字化一张图像：https://yinguobing.com/digital-image/
+
+人脸检测算法：https://yinguobing.com/viola-jones/
+
+深度学习十大应用（2019）：https://yinguobing.com/dl-applications/
+
+深度神经网络：https://yinguobing.com/deep-neural-network/
+
+卷积神经网络：`敬请期待`
+
 ## 精选项目
 跟随精选实战项目一步一步入门TensorFlow。
 
@@ -67,7 +88,7 @@ MNIST是一个由人类手写数字图像构成的数据集。它的作者为Yan
 项目地址：https://github.com/yinguobing/open_images
 
 ### 读写自定义TFRecord文件
-高效存储读取训练用文件。
+高效存储读取训练用文件，掌握Git `submodule` 的使用方法。
 
 文章地址：`敬请期待`
 
