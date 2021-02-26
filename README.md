@@ -32,7 +32,7 @@
 ## 精选项目
 跟随精选实战项目一步一步入门TensorFlow。
 
-### 项目一：我的第一个神经网络
+### 我的第一个神经网络
 MNIST是一个由人类手写数字图像构成的数据集。它的作者为Yann LeCun、Corinna Cortes与Christopher J.C. Burges。该数据集曾被用作分类算法的开发与评估。给定任一张图像，给出该图像对应的数字。深度学习的入门教程普遍以该任务为实例。它足够简单——包含10个类别的图像分类问题；同时又足够复杂——人类手写的数字可以非常潦草、难以辨认。
 
 ![MNIST](MNIST_From_Zero_To_Hero/docs/digits.png)
@@ -43,25 +43,29 @@ MNIST是一个由人类手写数字图像构成的数据集。它的作者为Yan
 
 项目地址：https://github.com/yinguobing/Playground/tree/main/MNIST_From_Zero_To_Hero
 
-### 项目二：卷积神经网络
+### 卷积神经网络
 从超过20万张图像样本中学习人脸特征点的分布规律。克服姿态、光照、遮挡等不利因素。构建经典神经网络架构。最终实现头部姿态的视频实时检测。
 
 视频地址：`敬请期待`
 
 项目地址：https://github.com/yinguobing/cnn-facial-landmark
 
+### 卷积神经网络（进阶）
+
+构建更加先进、复杂的神经网络架构。借用数据增强强化模型。掌握模型优化手段：剪枝与量化。
+
 进阶视频地址：`敬请期待`
 
 进阶项目地址：https://github.com/yinguobing/facial-landmark-detection-hrnet
 
-### 项目三：物体检测（专题）
+### 物体检测（专题）
 向经典的物体检测方案学习，掌握关键核心概念，理解深度卷积神经网络在检测方案中扮演的角色。
 
 视频地址：`敬请期待`
 
 项目地址：https://github.com/yinguobing/linglong
 
-### 项目四：人脸识别（专题）
+### 人脸识别（专题）
 解开人脸识别原理的神秘面纱，了解技术链条中不同阶段的实现背景，获取98%+准确率的自有人脸识别模型。
 
 视频地址：`敬请期待`
@@ -103,7 +107,7 @@ MNIST是一个由人类手写数字图像构成的数据集。它的作者为Yan
 
 视频地址：https://www.bilibili.com/video/BV1wV411i7qy/
 
-项目地址：`敬请期待`
+项目地址：https://github.com/yinguobing/arcface/blob/main/utils/shard_n_shuffle.py
 
 ### 使用Checkpoint保存训练进度
 灵活使用Checkpoint，保存训练进度与自定义对象。
