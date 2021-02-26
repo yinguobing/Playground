@@ -160,3 +160,14 @@ MNIST是一个由人类手写数字图像构成的数据集。它的作者为Yan
 视频地址：`敬请期待`
 
 项目地址：`敬请期待`
+
+## 作者
+[尹国冰](https://yinguobing.com)
+
+![wechat](docs/wechat.png)
+
+## License
+![GitHub](https://img.shields.io/github/license/yinguobing/Playground)
+
+## 致谢
+感谢TensorFlow的文档作者提供了详实的示例代码。感谢在Unsplash与Mixkit上提供免版权费用的图片与视频素材的原创作者们。
